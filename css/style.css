@@ -12905,3 +12905,253 @@ img {
 .commitbased {
   margin-top: 14px;
 }
+
+/* detail slider css start Mohan */
+
+.detail-page-slider {
+  position: relative;
+}
+
+.detail-swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.detail-swiper-container .swiper-slide img {
+  object-fit: cover;
+  height: 55vh;
+  width: 100%;
+}
+
+.swiper-button-prev {
+  left: 20px !important;
+}
+
+.swiper-button-next {
+  right: 20px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  background: #00559e !important;
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+  overflow: hidden;
+}
+
+/* detail slider css end Mohan */
+
+/* land detail css start Mohan */
+
+.overview-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5px;
+}
+
+.single-overview {
+  text-align: center;
+  cursor: pointer;
+}
+
+.single-overview:hover > p:first-child {
+  transform: scale(1.04);
+}
+
+.single-overview p {
+  margin-bottom: 0px;
+}
+
+.single-overview p:first-child {
+  font-size: 1.5em;
+  color: black;
+  transition: transform 150ms ease-out;
+}
+
+.single-overview p:last-child {
+  margin-top: -5px;
+}
+
+.lines::before,
+.lines::after {
+  content: '';
+  display: block;
+  background: #999;
+  height: 1px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.overview-section {
+  margin: 1em 0;
+}
+
+.overview-title,
+.overview-description-title,
+.overview-information-title {
+  color: #00559e;
+}
+
+.property-data {
+  color: black;
+  margin-left: 1em;
+}
+
+.property-information-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  justify-content: space-around;
+
+  margin-left: 10px;
+  width: 50%;
+}
+
+.property-information-container p {
+  margin-bottom: .5em;
+}
+
+.overview-description {
+  margin-left: 10px;
+}
+
+.detail-title{
+  margin: 0 15px;
+}
+
+.land-detail-container {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-gap: 1.5em;
+
+  padding: 10px 1em;
+  width: 100%;
+}
+
+.left-container {
+  box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin-bottom: 2em;
+
+  position: relative;
+
+  transition: box-shadow 250ms ease-out;
+}
+
+.left-container:hover {
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);  
+}
+
+.left-container:hover img {
+  transform: scale(1.04);
+}
+
+.left-container:hover .left-sale {
+  animation-name: bounce;
+  animation-duration: 500ms;
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotate(-50deg) translateY(-8px) translateX(-10px) scale(1.08);
+  }
+  25% {
+    transform: rotate(-50deg) translateY(-8px) translateX(-10px) scale(1);
+  }
+  75% {
+    transform: rotate(-50deg) translateY(-8px) translateX(-10px) scale(1.1);
+  }
+  100% {
+    transform: rotate(-50deg) translateY(-8px) translateX(-10px) scale(1);
+  }
+}
+
+.left-image-container {
+  overflow: hidden;
+}
+
+.left-container img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+
+  transition: transform 250ms ease-out;
+}
+
+.left-container p {
+  margin-bottom: 0px;
+}
+
+.left-land-road {
+  display: flex;
+}
+
+.left-road {
+  margin-left: 1em;
+}
+
+.left-container-details {
+  padding: 10px;
+}
+
+.left-price {
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.detail-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
+  max-width: 97%;
+}
+
+.black {
+  color: black;
+}
+
+.left-sale {
+  background: red;
+  color: white;
+  padding: 0px 15px;
+  z-index: 9;
+  font-weight: bold;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-50deg) translateY(-8px) translateX(-10px);
+}
+
+.left-detail-container .detail-title,
+.right-detail-container .overview-information-title {
+  margin-bottom: 1em;
+}
+
+.gray {
+  color: #999;
+}
